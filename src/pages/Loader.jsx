@@ -1,10 +1,14 @@
 import React from 'react'
-// import './index.css'
+import '../index.css'
 const Loader = () => {
   return (
-    <div className='loader flex justify-center items-center h-screen'>  
+  <div className='flex gap-2'>
+  <p className='text-3xl font-bold'>Data is loading please wait</p>
+    <div className='loader'>
       
-    </div>
+      </div>
+
+  </div>
   )
 }
 

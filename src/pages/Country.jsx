@@ -32,7 +32,28 @@ const Country = () => {
     setFilteredCountries(filtered);
   }, [searchTerm, countries]);
 
-  if (isPending) return <Loader />;
+  // if (isPending) return <Loader />;
+
+  const [isLoading , setIsLoading] = useState(true)
+
+  useEffect(() => {
+  
+   
+  
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 3000);
+  
+    return () => clearTimeout(timer);
+  }, []);
+  
+  if (isLoading) {
+    return (
+      <div className="flex justify-center">
+        <h1 className="mt-20 text-center"><Loader/></h1>
+      </div>
+    );
+  }
 
   return (
     <>

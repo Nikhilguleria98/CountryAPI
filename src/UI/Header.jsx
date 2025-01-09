@@ -38,13 +38,13 @@ const handleToogle=()=>{
 
                 </NavLink>
               </li>
-              <li>
+              {/* <li>
                 <NavLink to="/contact" className={({isActive})=>`hover:text-gray-500 duration-200  ${isActive?"border-b-2":""}`}>
                 Contact Us
 
                 </NavLink>
      
-                </li>
+                </li> */}
             </ul>
             
               <button onClick={handleToogle} className="flex md:hidden items-center">
@@ -80,12 +80,12 @@ const handleToogle=()=>{
 
                 </NavLink>
               </li>
-              <li>
+              {/* <li>
                 <NavLink to="/contact" onClick={handleToogle} className={({isActive})=>`hover:text-gray-500 duration-200  ${isActive?"border-b-2":""}`}>
                 Contact Us
 
                 </NavLink>
-              </li>
+              </li> */}
   
             </ul>
          </div>
