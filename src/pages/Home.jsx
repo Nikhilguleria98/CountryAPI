@@ -2,7 +2,7 @@ import React from 'react';
 
 const Home = () => {
   return (
-    <div className="flex justify-center mt-10 sm:mt-10 md:mt-20">
+    <div className="flex justify-center mt-10 sm:mt-10 md:mt-20 mb-20">
       <div className="flex flex-col md:flex-row px-4 sm:px-6 md:px-10 md:justify-between gap-5">
  
         <div className="w-full md:w-1/2 flex flex-col justify-center">
