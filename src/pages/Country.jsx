@@ -80,7 +80,7 @@ const Country = () => {
           placeholder="Search countries..."
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
-          className="mb-5 p-2 px-2 border-0 outline-none rounded-full w-3/12 bg-zinc-800 text-slate-400"
+          className="mb-5 p-2 px-2 border-0 outline-none rounded-full  bg-zinc-800 text-slate-400"
         />
         <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 w-8/12 gap-5">
           {currentCountries.length > 0 ? (
